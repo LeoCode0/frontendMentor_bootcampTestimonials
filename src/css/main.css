@@ -40,9 +40,10 @@ h1, h2, h3, h4, h5, h6, body{
     align-items: center;
     justify-content: center;
     width: 80%;
+    background-position: center;
     height: 280px;
     background-image: url(../images/pattern-bg.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     background-size: contain;
     position: relative;
     margin-bottom: 10%;
@@ -124,6 +125,8 @@ h1, h2, h3, h4, h5, h6, body{
         position: relative;
         flex-direction: row-reverse;
         padding: 0 10%;
+        background-size: 40%;
+        background-position: left bottom;
     }
 
     .main__containerImage{
@@ -132,9 +135,15 @@ h1, h2, h3, h4, h5, h6, body{
         height: 460px;
     }
 
+    .main__containerImage--image{
+        width: auto;
+        object-fit: contain;
+    }
+
     .main__containerImage--arrows{
-        left: 20%;
+        left: 30%;
         width: 20%;
+        box-shadow: -9px 24px 41px -20px rgba(0,0,0,1);
     }
 
     .main__info{
